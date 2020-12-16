@@ -23,19 +23,96 @@
         .text-5xl {
             font-size: 3rem;
         }
+
+        @media screen and (max-width: 991px) {
+            .p-0-max991 {
+                padding: 0px !important;
+            }
+
+            .px-0-max991 {
+                padding-left: 0px !important;
+                padding-right: 0px !important;
+            }
+
+            .max-100-max991 {
+                max-width: 100% !important;
+            }
+
+            .w-100-max991 {
+                max-width: 100% !important;
+            }
+
+            .py-60-max991 {
+                padding-left: 60px;
+                padding-right: 60px;
+            }
+
+            .hidden-max991 {
+                display: none !important;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            .p-0-max767 {
+                padding: 0px !important;
+            }
+
+            .px-0-max767 {
+                padding-left: 0px !important;
+                padding-right: 0px !important;
+            }
+
+            .px-15-max767 {
+                padding-left: 15px !important;
+                padding-right: 15px !important;
+            }
+
+            .nav-other-img {
+                width: 100% !important;
+            }
+
+            .w-100-max767 {
+                max-width: 100% !important;
+                width: 100% !important;
+            }
+
+            .w-75-max767 {
+                width: 75% !important;
+            }
+
+            .m-auto-max767 {
+                margin: auto !important;
+            }
+
+            .py-15-max767 {
+                padding-left: 15px !important;
+                padding-right: 15px !important;
+            }
+        }
+
+        @media screen and (max-width: 495px) {
+            .mb-15-max495 {
+                margin-bottom: 15px !important;
+            }
+
+            .w-100-max495 {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+        }
     </style>
 </head>
 <body>
     <header></header>
     <main>
-        <nav class="navbar navbar-expand-lg navbar-light px-5 py-3">
-            <div class="navbar-brand d-flex w-50">
-                <a href="#"><img src="assets/images/brilianpreneur-header-logo.680871b5.png" class="w-75" /></a>
-                <div class="border-left border-light w-50 pl-5 my-auto">
-                    <img src="assets/images/header-group-logo.94d1adcb.png" class="w-100" />
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light px-5 py-3 bg-white px-0-max767 px-15-max767">
+            <div class="navbar-brand d-flex flex-wrap w-50 w-75-max767">
+                <a href="#" class="w-50 w-100-max495"><img src="assets/images/brilianpreneur-header-logo.680871b5.png" class="w-75 mb-15-max495" /></a>
+                <div class="border-left border-light w-50 w-100-max495 pl-5 p-0-max767 my-auto mb-15-max495">
+                    <img src="assets/images/header-group-logo.94d1adcb.png" style="width: 200px;" class="nav-other-img" />
                 </div>
             </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" style="border-color: #fff;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
           
@@ -53,73 +130,73 @@
               </ul>
             </div>
         </nav>
-        <section class="d-flex flex-wrap">
-            <div class="w-50">
-                <img src="assets/images/phase3-atf.ccd0e4e3.jpg" class="img-fluid" />
+        <section class="d-flex flex-wrap" style="margin-top: 75px;">
+            <div class="col-md-6 col-xs-12 p-0">
+                <img src="assets/images/phase3-atf.ccd0e4e3.jpg" class="w-100" />
             </div>
-            <div class="w-50 d-flex flex-wrap" style="background-color: red;">
-                <div class="w-75 m-auto text-center text-white">
-                    <img src="assets/images/logo-brilianpreneur.8118cd03.png" class="img-fluid mb-4" />
+            <div class="col-md-6 col-xs-12 p-0 d-flex flex-wrap" style="background-color: red;">
+                <div class="w-75 w-100-max767 m-auto text-center text-white p-5 py-15-max767">
+                    <img src="assets/images/logo-brilianpreneur.8118cd03.png" class="w-100 mb-4" />
                     <h2 class="text-2xl mt-1 mb-1">10 - 13 DECEMBER 2020</h2>
                     <p>JAKARTA CONVENTION CENTER</p>
-                    <button class="btn btn-primary w-100 py-4 mt-2 text-lg font-weight-bold" style="background-color: #00539c; border-color: #00539c;">ENTER VIRTUAL EXPO</button>
+                    <button class="btn btn-primary w-100 py-4 mt-2 mb-5 text-lg font-weight-bold" style="background-color: #00539c; border-color: #00539c;">ENTER VIRTUAL EXPO</button>
                 </div>
             </div>
         </section>
         <section class="d-flex flex-wrap">
-            <div class="w-50 d-flex flex-wrap" style="background-color: #f8f2ed;">
-                <div class="w-75 m-auto text-center">
+            <div class="col-md-6 col-xs-12 p-0 d-flex flex-wrap" style="background-color: #f8f2ed;">
+                <div class="w-75 w-100-max767 m-auto text-center py-15-max767">
                     <img src="assets/images/image1.png" class="img-fluid mb-4 mt-5" />
-                    <p class="uppercase text-2xl px-5 mt-3 mb-3 text-left">BRILianpreneur UMKM EXPO[RT] is Coming! Celebrate the Revival of Indonesia’s Micro, Small, Medium Enterprises with Us!</p>
-                    <p class="px-5 text-left mt-4 mb-4">Since 2019, BRILianpreneur has been a distinctive and creative industry exhibition, displaying the work of Indonesia's best Micro, Small, and Medium Enterprises (MSMEs) through various enchanting art installations.</p>
-                    <p class="px-5 text-left mb-4">In the time of COVID-19, where MSMEs are the most exposed to the pandemic’s economic impact, Bank BRI further emphasizes its commitment to encourage national economic recovery through a number of concrete steps, which are focused on efforts to recover MSMEs by encouraging them to Go Digital.</p>
-                    <p class="px-5 text-left mb-4">This year, Bank BRI will present more than 400 selected MSMEs from four different categories: Fashion, Accessories & Beauty, Home Decor & Craft, and Food & Beverage. The annual exhibition also presents series of interesting and valuable programs for the audience: business matching, talk shows, artist performances, and MSME Awards.</p>
+                    <p class="uppercase text-2xl px-5 p-0-max991 mt-3 mb-3 text-left">BRILianpreneur UMKM EXPO[RT] is Coming! Celebrate the Revival of Indonesia’s Micro, Small, Medium Enterprises with Us!</p>
+                    <p class="px-5 p-0-max991 text-left mt-4 mb-4">Since 2019, BRILianpreneur has been a distinctive and creative industry exhibition, displaying the work of Indonesia's best Micro, Small, and Medium Enterprises (MSMEs) through various enchanting art installations.</p>
+                    <p class="px-5 p-0-max991 text-left mb-4">In the time of COVID-19, where MSMEs are the most exposed to the pandemic’s economic impact, Bank BRI further emphasizes its commitment to encourage national economic recovery through a number of concrete steps, which are focused on efforts to recover MSMEs by encouraging them to Go Digital.</p>
+                    <p class="px-5 p-0-max991 text-left mb-4">This year, Bank BRI will present more than 400 selected MSMEs from four different categories: Fashion, Accessories & Beauty, Home Decor & Craft, and Food & Beverage. The annual exhibition also presents series of interesting and valuable programs for the audience: business matching, talk shows, artist performances, and MSME Awards.</p>
                 </div>
             </div>
-            <div class="w-50 d-flex flex-wrap p-5">
-                <div class="w-75 m-auto p-5">
+            <div class="col-md-6 col-xs-12 p-0 d-flex flex-wrap p-5">
+                <div class="w-75 w-100-max767 m-auto p-5">
                     <img src="assets/images/about-image.f2e6f4ec.jpg" class="img-fluid" />
                 </div>
             </div>
         </section>
         <section style="background-color: #1c4891;">
-            <div class="container d-flex flex-wrap py-5">
-                <div class="col-md-4 text-white m-auto">
+            <div class="container d-flex flex-wrap py-5 max-100-max991 py-60-max991 py-15-max767">
+                <div class="col-md-4 col-xs-12 p-0-max991 text-white m-auto">
                     <p class="mb-2">TALKSHOW & COACHING CLINIC</p>
                     <h3>1-15 DECEMBER 2020</h3>
                     <hr class="my-4" style="border-color: #e2e8f0;" />
                     <p class="mb-2">MUSIC</p>
                     <h3>10-13 DECEMBER 2020</h3>
                 </div>
-                <div class="col-md-8 d-flex flex-wrap">
+                <div class="col-md-8 col-xs-12 p-0-max991 d-flex flex-wrap">
                     <img src="assets/images/schedules-heading-image.fcbd2740.jpg" class="img-fluid m-auto" />
                 </div>
             </div>
         </section>
         <section class="pb-5" style="background-color: #eee;">
-            <div class="container d-flex flex-wrap py-5">
+            <div class="container d-flex flex-wrap py-5 max-100-max991">
                 <h1 class="w-100 text-center mb-5 font-weight-bold text-5xl">Today</h1>
                 <div class="clearfix"></div>
-                <div class="col-2"></div>
-                <div class="col-4">
+                <div class="col-2 hidden-max991"></div>
+                <div class="col-md-4 col-xs-12 mb-4">
                     <div class="w-100" style="background-color: #718096; height: 350px;"></div>
                 </div>
-                <div class="col-4">
+                <div class="col-md-4 col-xs-12 mb-4">
                     <div class="w-100" style="background-color: #718096; height: 350px;"></div>
                 </div>
-                <div class="col-2"></div>
+                <div class="col-2 hidden-max991"></div>
             </div>
         </section>
         <section class="d-flex flex-wrap">
-            <div class="w-50" style="position: relative;">
+            <div class="col-md-6 col-xs-12 p-0 p-0-max991" style="position: relative;">
                 <div style="position: absolute; width: 100%; height: 100%;">
                     <video data-v-738d7ebb="" autoplay="autoplay" playsinline="" muted="muted" loop="loop" class="w-100 h-100" style="object-fit: cover;">
                         <source data-v-738d7ebb="" src="https://brilianpreneur-assets.fra1.cdn.digitaloceanspaces.com/homepage-video.mp4" poster="@/assets/images/poster.png" type="video/mp4">
                     </video>
                 </div>
             </div>
-            <div class="w-50 d-flex flex-wrap" style="background-color:#00539c;">
-                <div class="w-75 m-auto text-left text-white px-5 py-5">
+            <div class="col-md-6 col-xs-12 p-0 p-0-max991 d-flex flex-wrap" style="background-color:#00539c;">
+                <div class="w-75 w-100-max991 p-0-max991 m-auto text-left text-white px-5 py-5">
                     <h1 class="text-5xl mt-5 mb-4">Buyer Registration is Now Open</h1>
                     <p class="mt-3">Don’t miss the chance to be among the first to view the work of Indonesia's best Micro, Small, and Medium Enterprises (MSMEs)</p>
                     <p class="mt-3">Mark your calendar and be sure to join us on 10th to 13th of Devember this year from the comfort of your home or office. Get ready to build a valuable network and trade with the best from Indonesia!</p>
@@ -129,9 +206,9 @@
         </section>
     </main>
     <footer class="py-5">
-        <div class="container d-flex flex-wrap">
-            <div class="col-md-6 font-weight-bold">© 2020 Brilianpreneur.com</div>
-            <div class="col-md-3 my-auto">
+        <div class="container max-100-max991 d-flex flex-wrap">
+            <div class="col-sm-6 col-xs-12 font-weight-bold">© 2020 Brilianpreneur.com</div>
+            <div class="col-sm-3 col-xs-12 my-auto">
                 <p class="font-weight-bold small">
                     Gedung BRI<br />
                     Jl. Jenderal Sudirman Kav.44-46<br />
